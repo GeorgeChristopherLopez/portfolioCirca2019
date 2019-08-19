@@ -11,21 +11,67 @@ body {
   flex-direction: column;
   }
 
+
 .highlight{
    color: #B9323E;
 }
 
 .navbar {
-  border-bottom: #333 3px solid;
-  background: #B9323E;
-  color: #FFF;
-  position: fixed;
-  width: 100% ;
-  z-index: 1000;
+    border-bottom: #333 3px solid;
+    background-color: #B8313D;
+    color: #FFF;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+/*
+#navbarCollapse {
+    position: relative;
+    animation-name: navbarLeft, navbarFadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    opacity: 0;
 }
 
+@keyframes navbarLeft{
+    0%{
+        left: -1000px;
+        
 
+    }
+    100% {
+        left: 0px;
+        
+    }
+}
+@keyframes navbarFadeIn {
+    0% {
+         opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+    */
 #welcome-section {
   background: url("../img/welcome1.jpeg") no-repeat;
   background-size: cover;
@@ -53,6 +99,59 @@ body {
 
   }
 
+.fa-arrow-right {
+    position: relative;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+.fa:hover{
+    animation-iteration-count: 1;
+
+}
+
+@keyframes arrow {
+    0% {
+        left: -5px;
+    }
+    0% {
+        left: 0px;
+    }
+    0% {
+        left: 5px;
+    }
+    100% {
+        left: 10px;
+    }
+}
+div#social .fa:hover {
+    position: relative;
+    animation-name: dance;
+    animation-duration: 1s;
+      animation-iteration-count: infinite;
+}
+
+   
+
+@keyframes dance {
+    0% {
+        bottom: 5px;
+    }
+
+    0% {
+        bottom: 10px;
+    }
+
+    0% {
+        bottom: 5px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
 #projects-head-section{
   background-color: white;
   color: black;
@@ -72,9 +171,7 @@ body {
 
 }
 
-#social{
-  margin: 0 auto;
-}
+
 #contact-head-section {
   color: #fff;
   background-color: #242424;
@@ -91,25 +188,97 @@ text-align: center;
 
 article img{
   width: 80%;
+  margin-bottom: 12px;
   border: solid 1px #242424;
 }
 
+article img:hover{
+   transform: scale(1.2);
+    
+}
 
-footer{
-  text-align: center;
-  background-color: #242424;
-  margin-top: : auto;
+/*
+     .fadeInLeft {
+        position: relative;
+        animation-name: fadeInLeft;
+        animation-duration: 1s, 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes fadeInLeft{
+        0%{left:-1000px;}
+        100%{left: 0px;}
+    }
+
+
+    .fadeInRight {
+        position: relative;
+        animation-name: fadeInRight;
+        animation-duration: 1s, 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            right: -1000px;
+        }
+
+        100% {
+            right: 0px;
+        }
+    }
+
+
+    */
+footer {
+    text-align: center;
+    background-color: #242424;
+    margin-top: auto;
+    display: block;
+}
+
+footer p{
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    
 }
 
 
 
 #contact-head-section li{
   list-style: none;
-  display: inline;
+  display: inline-block;
 
   font-size: 33px;
-  padding: 30px 10px 30px 10px;
+  padding: 0px 30px;
 
 
 }
+/*
+.fadeUp {
 
+    position: relative;
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+    
+}
+
+@keyframes fadeUp {
+    0% {
+        bottom: -50px;
+        
+    }
+
+    100% {
+        bottom: 0px;
+    }        
+}
+    */
