@@ -6,11 +6,12 @@ sr.reveal('#navbarCollapse', {
     distance:"1000px",
     origin: 'left'
 });
-sr.reveal('.fadeIn', {
-    duration: 2000
+/*sr.reveal('.fadeIn', {
+    duration: 2000,
+    delay: 1000
 
 });
-
+*/
 sr.reveal('#contact-btn', {
     duration: 2000,
     delay: 4000

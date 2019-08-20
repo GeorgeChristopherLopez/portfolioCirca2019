@@ -54,13 +54,15 @@ body {
         opacity: 1;
     }
 }
+
+      */
 .fadeIn {
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
 }
 @keyframes fadeIn {
     0% {
@@ -71,11 +73,11 @@ body {
         opacity: 1;
     }
 }
-    */
+  
 #welcome-section {
   background: url("../img/welcome1.jpeg") no-repeat;
   background-size: cover;
-  min-height: 700px;
+  min-height: 95vh;
  
    }
   #welcome-section .dark-overlay {
@@ -83,7 +85,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px; }
+    min-height: 95vh; 
+
+  }
   #welcome-section .welcome-inner {
     padding-top: 150px; }
   #welcome-section .card-form {
