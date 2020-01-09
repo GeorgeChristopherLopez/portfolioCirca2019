@@ -1,0 +1,128 @@
+﻿body {
+
+    margin: 0;
+    padding: 0;
+    background: black;
+
+    color: #D9DADB;
+    font-family: 'Open Sans', sans-serif;
+}
+body, html {
+    height: 100%;
+}
+.highlight {
+    color: #0AAAA0;
+}
+canvas {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+}
+.projects img {
+    width: 100%;
+}
+.app{
+    position: absolute;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+
+   text-align: center;
+   margin: 15% 20%;
+    
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.description{
+ padding: 2rem;
+}
+.profile  {
+    
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.profile-section{
+    border-bottom: 1px solid #0AAAA0;
+    padding: 2.5rem;
+}
+
+.adjust, .about-me{
+    margin-top: 0;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+ul{
+    padding: 0;
+}
+
+.project-btn {
+    margin: 1rem auto;
+    background-color: #0AAAA0;
+    color: white;
+    width: 8rem;
+    padding: 1rem;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+
+.fa {
+    font-size: 2rem;
+    color: #0AAAA0;
+    margin:0 1rem;
+}
+
+.projects-section .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #0AAAA0;
+
+
+}
+
+
+
+.projects-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 2rem;
+}
+img{
+    border: none;
+}
+.projects-section article:hover{
+    box-shadow: rgba(255,255,255,0.5) 0px 0px 4px 4px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .about-me {
+   
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .profile-section {
+        border: none;
+        border-right: 1px solid #0AAAA0;
+      
+      }
+
+    .projects-section {
+      
+        grid-template-columns: 1fr 1fr;
+      }
+}
