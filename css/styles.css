@@ -2,14 +2,15 @@
 
     margin: 0;
     padding: 0;
-
+    background: black;
 
     color: #D9DADB;
     font-family: 'Open Sans', sans-serif;
 }
 body, html {
     height: 100%;
-    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .highlight {
     color: #0AAAA0;
@@ -126,4 +127,13 @@ img{
       
         grid-template-columns: 1fr 1fr;
       }
+
+    canvas {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
 }
