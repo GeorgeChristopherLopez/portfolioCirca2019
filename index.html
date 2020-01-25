@@ -1,49 +1,98 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
+
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <title>Javascript Mancala</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-    <div class="pScore">Player Score:</div>
-    <div class="cScore">Computer Score: </div>
-    </div>
-    <div class="header"><h3>Mancala</h3></div>
-    <div class="board">
-        <ul id="computer-mankala-side">
-            <li id="computer-mankala" class="mankala">
-            </li>
-        </ul>
-        <div class="pits">
-            <ul class="computer-pits">
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-            </ul>
-            <ul class="player-pits">
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-                <li>gem</li>
-            </ul>
-        </div>
-        <ul>
-            <li id="player-mankala" class="mankala"></li>
+    <div class="app">
+        <div class="about-me">
 
-        </ul>
+            <div class="profile-section">
+                <img class="profile" src="img/GeorgeChristopherLopez.jpg" />
+                <div id="social">
+                    <ul class="wow slideInLeft" data-wow-duration="2s">
+                        <li><a href="mailto:georgechristopherlopez@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/george-christopher-lopez-b9758337/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </li>
+
+                        <li><a href="https://github.com/GeorgeChristopherLopez" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://codepen.io/gclopez" target="_blank"><i class="fa fa-codepen"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="description">
+                <h2>
+                    Hello, my name's <span class="highlight">
+               George Lopez            </span>
+                </h2>
+                <h3>
+                    I worked as an actor in New York for a few years after graduating from a big studio, but wasn't too fond of serving cheeseburgers. So I started spending every second of my free time learning to design/code.
+                </h3>
+                <p>I love Javascript and the React framework</p>
+
+
+            </div>
+        </div>
+
+        <div>
+            <a href="#" class="project-btn">PROJECTS</a>
+        </div>
+        <div class="projects hide">
+           
+
+
+
+            <!----- PROJECTS SECTION ----->
+
+            <div class="projects-section">
+                <article class="wow fadeInRight" data-wow-duration="2s">
+                    <a href="https://georgechristopherlopez.github.io/Elite-Driving/" class="image fit thumb" target="_blank"><img src="img/elite-driving-thumbnail.png" alt="" /></a>
+                    <h3>Elite Driving</h3>
+                    <p>Making your driving, Elite.</p>
+                    <a href="https://georgechristopherlopez.github.io/Elite-Driving/" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/GeorgeChristopherLopez/Elite-Driving" class="btn btn-danger" target="_blank">View Code</a>
+                </article>
+                <article>
+                    <a href="https://georgechristopherlopez.github.io/fitbody/" class="image fit thumb" target="_blank"><img src="img/Fitbody_thumbnail.png" alt="" /></a>
+                    <h3>Fitbody</h3>
+                    <p>Fitness programs and meal plans for the extreme.</p>
+                    <a href="https://georgechristopherlopez.github.io/fitbody/" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/GeorgeChristopherLopez/fitbody" class="btn btn-danger" target="_blank">View Code</a>
+                </article>
+
+                <article class="wow fadeInLeft" data-wow-duration="2s">
+                    <a href="https://georgechristopherlopez.github.io/Skyward-Esl/" class="image fit thumb" target="_blank"><img src="img/skyward_thumbnail.png" alt="" /></a>
+                    <h3>Skyward ESL</h3>
+                    <p>ESL program and U.S Citizenship lessons for Non English speakers.</p>
+                    <a href="https://georgechristopherlopez.github.io/Skyward-Esl/" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/GeorgeChristopherLopez/Skyward-Esl" class="btn btn-danger" target="_blank">View Code</a>
+                </article>
+                <article class="wow fadeInRight" data-wow-duration="2s">
+                    <a href="https://georgechristopherlopez.github.io/arch-equipment/" class="image fit thumb" target="_blank"><img src="img/archequipment_thumbnail.png" alt="" /></a>
+                    <h3>Arch Equipment</h3>
+                    <p>Hottest equipment for contractors and enthusiast. New and Used.</p>
+                    <a href="https://georgechristopherlopez.github.io/arch-equipment/" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    <a href="https://github.com/GeorgeChristopherLopez/arch-equipment" class="btn btn-danger" target="_blank">View Code</a>
+                </article>
+            </div>
+        </div>
+        
     </div>
-    <div class="turn-table">
-    
-    <button class="pTurn">Player </button>
-    <button class="cTurn turn">Computer</button>
-    </div>
-    <script src="js/app.js"></script>
+ 
+    <script src="js/three.min.js"></script>
+
+    <script  src="js/app.js"></script>
 </body>
 </html>
