@@ -124,8 +124,12 @@ img{
 
     .projects-section {
       
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
+    article{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     canvas {
         position: fixed;
