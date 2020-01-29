@@ -52,10 +52,8 @@ canvas {
     padding: 2.5rem;
 }
 
-.adjust, .about-me{
-    margin-top: 0;
-    margin-bottom:0;
-    padding-bottom: 0;
+.adjust, .about-me {
+    margin: 0% 10%;
 }
 ul{
     padding: 0;
@@ -63,7 +61,7 @@ ul{
 
 .project-btn {
     margin: 1rem auto;
-    background-color: #0AAAA0;
+    background: #0AAAA0;
     color: white;
     width: 8rem;
     padding: 1rem;
@@ -83,12 +81,10 @@ li {
     margin:0 1rem;
 }
 
-.projects-section .btn {
+.projects-section a.btn {
     text-decoration: none;
-    color: white;
-    background-color: #0AAAA0;
-
-
+    border: 1px solid #0AAAA0;
+    color: #0AAAA0;
 }
 
 
