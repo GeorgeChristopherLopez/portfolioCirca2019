@@ -1,10 +1,16 @@
-﻿body {
+﻿:root {
+    --main-color: #0AAAA0;
+    --main-green: #01A70E;
+}
+
+
+body {
 
     
     background: black;
 
     color: #D9DADB;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica;
 }
 body, html {
     height: 100%;
@@ -12,7 +18,7 @@ body, html {
     padding: 0;
 }
 .highlight {
-    color: #0AAAA0;
+    color: var(--main-green);
 }
 canvas {
    position: fixed;
@@ -39,7 +45,7 @@ canvas {
     grid-template-columns: 1fr;
 }
 .description{
- padding: 2rem;
+ padding: 1.5rem;
 }
 .profile  {
     
@@ -48,7 +54,7 @@ canvas {
 }
 
 .profile-section{
-    border-bottom: 1px solid #0AAAA0;
+    border-bottom: 1px solid var(--main-green);
     padding: 2.5rem;
 }
 
@@ -61,7 +67,7 @@ ul{
 
 .project-btn {
     margin: 1rem auto;
-    background: #0AAAA0;
+    background: var(--main-green);
     color: white;
     width: 8rem;
     padding: 1rem;
@@ -69,6 +75,12 @@ ul{
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 900;
+    box-shadow: 0px 2px 3px #eee ;
+}
+
+.project-btn:hover{
+    background: #222;
 }
 li {
     list-style: none;
@@ -77,14 +89,14 @@ li {
 
 .fa {
     font-size: 2rem;
-    color: #0AAAA0;
+    color: var(--main-green);
     margin:0 1rem;
 }
 
 .projects-section a.btn {
     text-decoration: none;
-    border: 1px solid #0AAAA0;
-    color: #0AAAA0;
+    border: 1px solid var(--main-green);
+    color: var(--main-green);
 }
 
 
@@ -98,41 +110,43 @@ li {
 img{
     border: none;
 }
-.projects-section article:hover{
-    box-shadow: rgba(255,255,255,0.5) 0px 0px 4px 4px;
+.projects-section img:hover{
+    box-shadow: var(--main-green) 0px 0px 4px 4px;
 }
 
 .hide {
     display: none;
 }
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 1024px){
-    .about-me {
-   
-        grid-template-columns: 1fr 1fr;
-
-    }
-    .profile-section {
-        border: none;
-        border-right: 1px solid #0AAAA0;
-      
-      }
-
-    .projects-section {
-      
-        grid-template-columns: 1fr;
-      }
-    article{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    canvas {
-        position: fixed;
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
 }
+    @media screen and (min-width: 768px) {
+        .about-me {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .profile-section {
+            border: none;
+            border-right: 1px solid var(--main-green);
+            padding: 0;
+            margin: 0;
+        }
+
+        .projects-section {
+            grid-template-columns: 1fr;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        canvas {
+            position: fixed;
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+    }
