@@ -55,7 +55,7 @@ app.innerHTML = `
                     <div class="project">
                         <a href="http://bit.ly/32ZFJR9" class="image fit thumb" target="_blank"><img src="img/elite_driving_thumbnail.png" alt="" /></a>
                     </div>
-                    <div class="description">
+                    <div class="project-description">
                         <h3>Elite Driving</h3>
                         <p>Landing page for a driving school website. Featuring a DMV Quiz App.</p>
                         <a href="http://bit.ly/32ZFJR9" class="btn btn-outline-danger" target="_blank">View Project</a>
@@ -63,7 +63,7 @@ app.innerHTML = `
                     </div>
                 </article>
                 <article >
-                    <div class="description">
+                    <div class="project-description">
                         <h3>Flix Central</h3>
                         <p>Movie Database Website based on the MOVIEDB API.</p>
                         <a href="http://bit.ly/39yRdOc" class="btn btn-outline-danger" target="_blank">View Project</a>
@@ -80,7 +80,7 @@ app.innerHTML = `
                 </article>
 
                 <article >
-                    <div>
+                    <div class="project-description">
                         <a href="https://georgechristopherlopez.github.io/Skyward-Esl/" class="image fit thumb" target="_blank"><img src="img/skyward_thumbnail.png" alt="" /></a>
                     </div>
                     <div>
@@ -91,7 +91,7 @@ app.innerHTML = `
                     </div>
                 </article>
                 <article class="wow fadeInRight" data-wow-duration="2s">
-                    <div>
+                    <div class="project-description">
                         <h3>Mancala Web App</h3>
                         <p>Web browser game of Mancala using HTML and Javascript DOM manipulation</p>
                         <a href="http://bit.ly/2PVrgRa" class="btn btn-outline-danger" target="_blank">View Project</a>
