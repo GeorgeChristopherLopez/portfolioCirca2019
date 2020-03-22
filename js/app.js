@@ -3,7 +3,7 @@ let bg = document.querySelector('canvas');
 let projectBtn = document.querySelector('.project-btn');
 
 let app = document.querySelector('.app');
-app.innerHTML += `
+app.innerHTML = `
  <div class="about-me">
 
             <div class="profile-section">
@@ -107,16 +107,7 @@ app.innerHTML += `
 
 `;
 
-let projects = document.querySelector('.projects');
-projectBtn.addEventListener('click', e => {
-    app.classList.toggle('adjust');
 
-   
-   
-   
-
-
-})
 
 
 console.log(bg);
