@@ -58,17 +58,20 @@ app.innerHTML = `
                     <div class="project-description">
                         <h3>Elite Driving</h3>
                         <p>Landing page for a driving school website. Featuring a DMV Quiz App.</p>
+                        <div class="buttons">
                         <a href="http://bit.ly/32ZFJR9" class="btn btn-outline-danger" target="_blank">View Project</a>
                         <a href="http://bit.ly/2PXpdfd" class="btn btn-danger" target="_blank">View Code</a>
+                    </div>
                     </div>
                 </article>
                 <article >
                     <div class="project-description">
                         <h3>Flix Central</h3>
                         <p>Movie Database Website based on the MOVIEDB API.</p>
+                        <div class="buttons">
                         <a href="http://bit.ly/39yRdOc" class="btn btn-outline-danger" target="_blank">View Project</a>
                         <a href="http://bit.ly/2vR53wL" class="btn btn-danger" target="_blank">View Code</a>
-
+                        </div>
 
                     </div>
                     <div class="project">
@@ -86,17 +89,20 @@ app.innerHTML = `
                     <div>
                         <h3>Skyward ESL</h3>
                         <p>ESL program and U.S Citizenship lessons for Non English speakers.</p>
+                        <div class="buttons">
                         <a href="https://georgechristopherlopez.github.io/Skyward-Esl/" class="btn btn-outline-danger" target="_blank">View Project</a>
                         <a href="https://github.com/GeorgeChristopherLopez/Skyward-Esl" class="btn btn-danger" target="_blank">View Code</a>
+                    </div>
                     </div>
                 </article>
                 <article class="wow fadeInRight" data-wow-duration="2s">
                     <div class="project-description">
                         <h3>Mancala Web App</h3>
                         <p>Web browser game of Mancala using HTML and Javascript DOM manipulation</p>
+                        <div class="buttons">
                         <a href="http://bit.ly/2PVrgRa" class="btn btn-outline-danger" target="_blank">View Project</a>
                         <a href="http://bit.ly/2v1T4fi" class="btn btn-danger" target="_blank">View Code</a>
-
+                    </div>
                     </div>
 <div>
     <a href="http://bit.ly/2PVrgRa" class="image fit thumb" target="_blank"><img src="img/mancala_thumbnail.png" alt="" /></a>

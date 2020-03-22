@@ -109,11 +109,17 @@ li {
     text-decoration: none;
     box-shadow: 2px 2px 1px #eee;
     color: #eee;
-    padding: .75rem;
+    padding: .5rem;
     background: #222;
-   
+       
 }
-
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
     .projects-section a.btn:hover {
         border: 1px solid var(--main-color);
         color: #D9DADB;
