@@ -47,7 +47,7 @@ canvas {
    
 }
 .description{
- padding: 1.0rem;
+ padding: 1.5rem;
 
 }
 .project-description {
@@ -125,7 +125,7 @@ svg {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 
-    padding: 5rem 1rem;
+    padding: 5rem 3rem;
     
 }
 
@@ -155,7 +155,7 @@ svg {
 
     .projects-section {
         grid-template-columns: 1fr;
-        
+        padding: 7rem 5rem;
     }
 
     article {
@@ -176,23 +176,23 @@ svg {
 
 @media screen and (min-width: 1440px) {
    h2{
-       font-size: 3.5rem;
+       font-size: 2.5rem;
    }
 
     h3 {
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 
     h4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     a.project-btn, a.btn {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     svg {
@@ -200,7 +200,7 @@ svg {
     }
 
     .profile{
-        height: 30rem;
+        height: 15rem;
         margin: 1rem 0rem;
     }
     .about-me{
