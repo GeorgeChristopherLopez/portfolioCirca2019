@@ -36,29 +36,34 @@ canvas {
     grid-template-columns: 1fr;
 
    text-align: center;
-   margin: 10% 12.5%;
+
     
 }
 
 .about-me {
     display: grid;
     grid-template-columns: 1fr;
-    height: 55vh;
+  padding: 2rem 1rem 1rem;
    
 }
 .description{
- padding: 1.5rem;
+ padding: 1.0rem;
+
+}
+.project-description {
+    padding: 1.0rem;
+    margin: 1rem 0rem;
 }
 .profile  {
     
-    height: 15rem;
+    height: 10rem;
     border-radius: 5%;
 }
 
 .profile-section {
     border-bottom: 1px solid var(--main-color);
-    padding: 1.5rem;
-    
+    border-top: 1px solid var(--main-color);
+    padding: 1rem;
 }
 
 .adjust, .about-me {
@@ -67,22 +72,20 @@ canvas {
 ul{
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
 
 }
 .projects-header {
-    height: 30vh;
+    padding: 1rem;
     
 }
 a.project-btn {
     margin: 1rem auto;
-    background: var(--main-color);
-    color: white;
-    width: 12rem;
-    padding: 1rem;
     background: #222;
-    display: none;
+    color: white;
+    width: 10rem;
+    padding: 1rem;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
@@ -93,33 +96,23 @@ a.project-btn {
 a.project-btn:hover{
     background: var(--main-color);
 }
-
 li {
     list-style: none;
     display: inline;
 }
 
-.fa {
-    font-size: 2rem;
-    color: var(--main-color);
-    margin:0 1rem;
+svg {
+ height: 2rem;
 }
 
 .projects-section a.btn {
     text-decoration: none;
-    box-shadow: 2px 2px 1px #eee;
-    color: #eee;
-    padding: .5rem;
-    background: #222;
-       
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding:.5rem;
+    
 }
-.buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    text-align: center;
-    padding: 1rem;
-}
+
     .projects-section a.btn:hover {
         border: 1px solid var(--main-color);
         color: #D9DADB;
@@ -131,30 +124,20 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-    margin: 2rem;
+
     padding: 5rem 1rem;
     
 }
-.projects-section img{
-   margin: 2rem 0rem;
-}
+
 .projects-section img:hover{
     box-shadow: var(--main-color) 0px 0px 4px 4px;
 }
-.project-description{
-    padding: 2rem;
-}
+
 .hide {
     display: none;
 }
 @media screen and (min-width: 768px) {
-    .app {
-        position: absolute;
-        display: grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin: 15% 7.5%;
-    }
+  
     .about-me {
         grid-template-columns: 1fr 1fr;
     }
@@ -166,12 +149,10 @@ li {
     .profile-section {
         border: none;
        
-        padding: 1.5rem 0rem;
+        padding: 3.5rem 0rem;
         margin: 0;
     }
-    a.project-btn{
-        display: block;
-    }
+
     .projects-section {
         grid-template-columns: 1fr;
         
@@ -189,5 +170,40 @@ li {
         height: 100%;
         width: 100%;
         z-index: -1;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+   h2{
+       font-size: 3.5rem;
+   }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    a.project-btn, a.btn {
+        font-size: 2rem;
+    }
+
+    svg {
+        height: 4rem;
+    }
+
+    .profile{
+        height: 30rem;
+        margin: 1rem 0rem;
+    }
+    .about-me{
+        grid-gap: 2.5rem;
     }
 }
